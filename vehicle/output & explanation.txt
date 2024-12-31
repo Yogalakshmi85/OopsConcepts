@@ -1,0 +1,49 @@
+Vehicle Simulation Program
+This Java program demonstrates a simple object-oriented approach to simulate a vehicle and its behaviors, focusing on car acceleration and gear changes. The program consists of a basic inheritance structure, where a specific type of car (BMW) is modeled, inheriting general characteristics from a broader vehicle class.
+
+Key Concepts:
+Object-Oriented Programming (OOP) Concepts:
+
+Classes and Objects: 
+	The program uses multiple classes (Vehicle, Car, BMW) to model real-world entities. Objects of these classes represent real vehicles.
+
+Inheritance: 
+	The BMW class extends the Car class, and the Car class extends the Vehicle class. This demonstrates single inheritance, where BMW inherits properties and methods from Car, and Car inherits from Vehicle.
+
+Encapsulation: 
+	The program encapsulates the state of a vehicle (such as name, currentSpeed, gears) using private attributes and provides public getter and setter methods to access and modify these values.
+
+Polymorphism: 
+	The acceleration method in the BMW class defines how the car’s speed changes based on different conditions. This shows how behavior can be customized by overriding or extending a base class method.
+
+
+Classes and Their Responsibilities:
+
+Vehicle Class:
+Represents the basic characteristics and behaviors of any vehicle (e.g., name, speed).
+Provides methods for moving (move()) and stopping (stop()).
+
+Car Class:
+Extends Vehicle and adds specific attributes for cars, such as type, number of wheels, doors, and gears.
+Includes methods for displaying car details (details()) and changing gears (changeGear()).
+
+BMW Class:
+Extends Car and customizes the behavior for a BMW vehicle, such as how the car accelerates and changes gears based on the rate of acceleration.
+
+Output:
+
+Enter rate to know the gear no:
+67
+Enter the type of the car:
+M5 Touring
+Car details: 
+Name: BMW
+Type: M5 Touring
+Wheels: 6
+Doors: 5
+The car changed to the gear 6
+
+Conclusion
+This program is an example of how object-oriented principles can be applied to model real-world objects like vehicles. It demonstrates the use of inheritance, encapsulation, and polymorphism to create a simulation of car behavior, particularly focusing on speed changes and gear transitions.
+
+
